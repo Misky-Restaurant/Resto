@@ -1,20 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
+    border: solid blue;
 }
 
 .bg-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mpichu.jpg);
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
 
+.card {
+    width: 26rem;
+    margin: auto;
+    background: transparent;
+}
+
 .tittle {
     color: rgb(243, 9, 9);
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
 }
 
