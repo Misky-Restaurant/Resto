@@ -25,7 +25,7 @@ import data from './data.json' with { type: 'json' };
 //     });
 // }
 
-const array = ["sugerencias", "entrada", "Platos criollos", "Pescados y mariscos", "Tallarin", "Especiales", "Bebidas"];
+const array = ["sugerencias", "entrada", "Platos criollos", "Pescados y mariscos", "Tallarin", "Especiales", "Postres y jugos", "Bebidas"];
 const box = document.querySelector(".box");
 const boxwidth = box.clientWidth;
 let cont = 0;

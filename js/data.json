@@ -115,8 +115,8 @@
             "price": "25.000"
         },
         {
-            "name": "Cricharon",
-            "price": "8.000"
+            "name": "Cricharon de calamar",
+            "price": "18.000"
         },
         {
             "name": "Chicharon d pescado",
@@ -128,11 +128,11 @@
         },
         {
             "name": "Ceviche de pescado ",
-            "price": "18.000"
+            "price": "18.000 / $25.000"
         },
         {
-            "name": "Ceviche mixt",
-            "price": "20.000"
+            "name": "Ceviche mixto",
+            "price": "20.000 / $27.000"
         }
     ],
     "Tallarin": [
@@ -169,6 +169,16 @@
         {
             "name": "Especial mariscos",
             "price": "20.000"
+        }
+    ],
+    "Postres": [
+        {
+            "name": "Jarra jugo (anana, papaya, durasno, limonada)",
+            "price": "8.000"
+        },
+        {
+            "name": "Porcion torta(torta helada, torta 3 leches)",
+            "price": "3.000"
         }
     ],
     "Bebidas": [
