@@ -1,14 +1,17 @@
 
 import data from './data.json' with { type: 'json' };
 
-const array = ["sugerencias", "entrada", "Platos criollos", "Pescados y mariscos", "Tallarin", "Especiales", "Postres y jugos", "Bebidas"];
+const array = ["sugerencias", "entrada", "Platos criollos", "Pescados y mariscos", "Tallarin", "Especiales", "Postres y jugos", "Bebidas", "Extras"];
 const box = document.querySelector(".box");
 
 let cont = 0;
+let contid = 1;
 Object.entries(data).forEach(([key, element]) => {  //con objects.entries recorremos los array d objetos
     const div = document.createElement("div");
     DOMTokenList.prototype.add.apply(div.classList, ['subtittle', 'border-bottom', 'border-danger', 'mycard']);//agregamos multiples clasess al div
     div.innerHTML = array[cont]; cont++;         //no logre obtener el nombre de cada objeot asi que cree un array para  poner los tiulos        
+    div.id = 'id' + contid;
+    contid++;
     box.appendChild(div);
     const card = document.querySelector(".mycard");//I select mycard class to get its width 
 
@@ -16,6 +19,7 @@ Object.entries(data).forEach(([key, element]) => {  //con objects.entries recorr
     DOMTokenList.prototype.add.apply(ul.classList, ['navbar-nav', 'col']); //agregamos multiples clasess al ul
 
     div.appendChild(ul);
+
 
     element.forEach(e => {
         const li = document.createElement("li");

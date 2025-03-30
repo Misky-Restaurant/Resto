@@ -2,63 +2,63 @@
     "sugerencias": [
         {
             "name": "monstro",
-            "price": "20.500"
+            "price": "22.500"
         },
         {
             "name": "monstrito",
-            "price": "18.500"
+            "price": "20.000"
         },
         {
             "name": "Ronda marina",
-            "price": "30.000"
+            "price": "35.000"
         }
     ],
     "entrada": [
         {
             "name": "Papa ala huancaina",
-            "price": "8.500"
+            "price": "10.000"
         },
         {
             "name": "Anticucho con papa ala huancaina",
-            "price": "10.000"
+            "price": "15.000"
         },
         {
             "name": "Caldo de gallina (sab y dom)",
-            "price": "10.000"
+            "price": "12.000"
         },
         {
             "name": "Caldo de mote (sab y dom)",
-            "price": "10.000"
+            "price": "12.000"
         },
         {
             "name": "sopa minuta",
-            "price": "10.000"
+            "price": "12.000"
+        },
+        {
+            "name": "Leche de tigre",
+            "price": "12.000"
         }
     ],
     "Criollos": [
         {
             "name": "Salchipollo",
-            "price": "10.000"
+            "price": "14.000"
         },
         {
             "name": "Broster",
-            "price": "12.000"
+            "price": "14.000"
         },
         {
             "name": "salchipapa",
-            "price": "9.000"
+            "price": "10.000"
         },
         {
             "name": "Arroz con pollo c/huancaina",
-            "price": "12.000"
+            "price": "14.000"
         },
         {
             "name": "Seco de carne",
-            "price": "11.000"
-        },
-        {
-            "name": "Seco de cordero",
-            "price": "15.000"
+            "price": "14.000"
         },
         {
             "name": "Lomo saltado",
@@ -70,69 +70,65 @@
         },
         {
             "name": "Aji de gallina",
-            "price": "12.000"
+            "price": "14.000"
         },
         {
             "name": "Bisteck a lo pobre",
-            "price": "12.000"
+            "price": "14.000"
         },
         {
             "name": "Chicharon de cerdo",
-            "price": "15.000"
-        },
-        {
-            "name": "Leche de tigre",
-            "price": "12.000"
+            "price": "18.000"
         }
     ],
     "Pescados": [
         {
             "name": "Parihuela ",
-            "price": "20.000"
-        },
-        {
-            "name": "Sudado de pescado",
-            "price": "15.000"
-        },
-        {
-            "name": "Jalea + ceviche",
-            "price": "20.000"
-        },
-        {
-            "name": "Arroz con pollo c/ ceviche",
-            "price": "14.000"
-        },
-        {
-            "name": "Pescado frito",
-            "price": "12.000"
-        },
-        {
-            "name": "Jalea personal",
-            "price": "18.000"
-        },
-        {
-            "name": "Jalea familiar",
             "price": "25.000"
         },
         {
-            "name": "Cricharon de calamar",
-            "price": "18.000"
-        },
-        {
-            "name": "Chicharon d pescado",
-            "price": "18.000"
-        },
-        {
-            "name": "Arroz con marisco",
+            "name": "Sudado de pescado",
             "price": "20.000"
         },
         {
+            "name": "Jalea + ceviche",
+            "price": "25.000"
+        },
+        {
+            "name": "Arroz con pollo c/ ceviche",
+            "price": "18.000"
+        },
+        {
+            "name": "Pescado frito",
+            "price": "15.000"
+        },
+        {
+            "name": "Jalea personal",
+            "price": "22.000"
+        },
+        {
+            "name": "Jalea familiar",
+            "price": "35.000"
+        },
+        {
+            "name": "Cricharon de calamar",
+            "price": "22.000"
+        },
+        {
+            "name": "Chicharon d pescado",
+            "price": "22.000"
+        },
+        {
+            "name": "Arroz con marisco",
+            "price": "25.000"
+        },
+        {
             "name": "Ceviche de pescado ",
-            "price": "18.000 / $25.000"
+            "price": "22.000 / $35.000"
         },
         {
             "name": "Ceviche mixto",
-            "price": "20.000 / $27.000"
+            "price": "28.000 / $38.000"
         }
     ],
     "Tallarin": [
@@ -142,39 +138,51 @@
         },
         {
             "name": "Pollo o carne",
-            "price": "14.000"
+            "price": "15.000"
         },
         {
-            "name": "Especial cerdo",
+            "name": "Mixto",
             "price": "18.000"
         },
         {
-            "name": "Especial mariscos",
+            "name": "Especial cerdo",
             "price": "20.000"
+        },
+        {
+            "name": "Especial mariscos",
+            "price": "25.000"
         }
     ],
     "Especiales": [
         {
-            "name": "Vegiie",
-            "price": "12.000"
+            "name": "Sopa Wantan",
+            "price": "15.000"
         },
         {
-            "name": "Pollo o carne",
-            "price": "14.000"
-        },
-        {
-            "name": "Especial cerdo",
-            "price": "18.000"
-        },
-        {
-            "name": "Especial mariscos",
+            "name": "Sopa Wantan especial",
             "price": "20.000"
+        },
+        {
+            "name": "Aeropuerto",
+            "price": "16.000"
+        },
+        {
+            "name": "Combinado",
+            "price": "22.000"
+        },
+        {
+            "name": "Pollo agridulse",
+            "price": "18.500"
+        },
+        {
+            "name": "Karu Wantan",
+            "price": "22.000"
         }
     ],
     "Postres": [
         {
             "name": "Jarra jugo (anana, papaya, durasno, limonada)",
-            "price": "8.000"
+            "price": "7.000"
         },
         {
             "name": "Porcion torta(torta helada, torta 3 leches)",
@@ -223,12 +231,26 @@
             "price": "7.500"
         },
         {
-            "name": "Corona",
-            "price": "7.000"
+            "name": "Brahma",
+            "price": "6.500"
+        }
+    ],
+    "Extras": [
+        {
+            "name": "Porción de arroz",
+            "price": "5.000"
         },
         {
-            "name": "Brahma",
-            "price": "6.000"
+            "name": "Porción de papas",
+            "price": "8.000"
+        },
+        {
+            "name": "Porción de ensalada",
+            "price": "5.000"
+        },
+        {
+            "name": "Porción de cancha",
+            "price": "5.000"
         }
     ]
 }
