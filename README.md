@@ -43,11 +43,6 @@ mvn clean install
 
 mvn spring-boot:run
 
-## 📋 Bloque 2 de 2: Endpoints, Estructura y Licencia
-
-Copia este segundo bloque y pégalo inmediatamente después del contenido del primer bloque:
-
-markdown
 ## 🔌 Endpoints de la API
 
 La API expone los siguientes endpoints para la gestión de recursos:
@@ -119,7 +114,10 @@ Ejemplo de Cuerpo de Solicitud (POST/PUT /orders):
 ```
 
 ## 📂 Estructura del Proyecto
+
 El proyecto sigue una estructura modular típica de Spring Boot organizada por capas.
+
+```plaintext
 src/
  ├── main/
  │    ├── java/
@@ -133,6 +131,7 @@ src/
  │    │       └── service/
  │    └── resources/
  │         └── application.properties
+```
 
 
 
