@@ -30,7 +30,7 @@ bash
 git clone [https://github.com/tu_usuario/ferreteria-api.git](https://github.com/tu_usuario/ferreteria-api.git)
 
 cd ferreteria-api
-
+```markdown
 spring.datasource.url=jdbc:mysql://localhost:3306/ferreteria
 spring.datasource.username=root
 spring.datasource.password=your_password
@@ -38,7 +38,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.show-sql=true
-
+```
 mvn clean install
 
 mvn spring-boot:run
@@ -144,9 +144,4 @@ repository/: Contiene los repositorios que interactúan con la base de datos, us
 
 service/: Contiene la lógica de negocio y servicios relacionados con las entidades.
 
-Sección,Formato Markdown,Tienes que hacer clic...
-Comandos Bash,```bash,1 clic (en el botón de copia automática de GitHub)
-Propiedades de Spring,```properties,1 clic
-Cuerpo JSON de Producto,```json,1 clic
-Cuerpo JSON de Categoría,```json,1 clic
-Estructura del Proyecto,```,1 clic
+
