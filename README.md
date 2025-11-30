@@ -71,7 +71,8 @@ La API expone los siguientes endpoints para la gestión de recursos:
   "price": 5000,
   "category": { "id": 1 },
   "state": true
-}```
+}
+```
 
 2. Categorías (/category)
 
