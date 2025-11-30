@@ -47,7 +47,7 @@ mvn spring-boot:run
 
 Copia este segundo bloque y pégalo inmediatamente después del contenido del primer bloque:
 
-```markdown
+markdown
 ## 🔌 Endpoints de la API
 
 La API expone los siguientes endpoints para la gestión de recursos:
