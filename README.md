@@ -73,35 +73,51 @@ La API expone los siguientes endpoints para la gestión de recursos:
   "state": true
 }
 ```
+# ✔ Categorías (/category)
 
-2. Categorías (/category)
-
-Método,Endpoint,Descripción,Cuerpo de Solicitud (Ejemplo)
-POST,/category,Crea una nueva categoría.,Bloque de JSON (ver ejemplo abajo)
-GET,/category,Obtiene una lista de todas las categorías.,N/A
-GET,/category/{id},Obtiene una categoría por su ID.,N/A
-PUT,/category/{id},Actualiza una categoría existente.,Mismo cuerpo que POST
-DELETE,/category/{id},Elimina una categoría por su ID.,N/A
+| Método     | Endpoint         | Descripción                      | Cuerpo de Solicitud   |
+| ---------- | ---------------- | -------------------------------- | --------------------- |
+| **POST**   | `/category`      | Crea una nueva categoría.        | JSON (ver ejemplo)    |
+| **GET**    | `/category`      | Lista todas las categorías.      | N/A                   |
+| **GET**    | `/category/{id}` | Obtiene una categoría por su ID. | N/A                   |
+| **PUT**    | `/category/{id}` | Actualiza una categoría.         | Mismo cuerpo que POST |
+| **DELETE** | `/category/{id}` | Elimina una categoría.           | N/A                   |
 
 Ejemplo de Cuerpo de Solicitud (POST/PUT /category):
+```json
 {
   "name": "Herramientas"
 }
+```
+# ✔ Pedidos (/orders)
 
-Método,Endpoint,Descripción,Cuerpo de Solicitud (Ejemplo)
-POST,/orders,Crea un nuevo pedido.,Bloque de JSON (ver ejemplo abajo)
-GET,/orders,Devuelve una lista de todos los pedidos.,N/A
-GET,/orders/{id},Obtiene un pedido por su ID.,N/A
-PUT,/orders/{id},Actualiza un pedido existente.,Mismo cuerpo que POST
-DELETE,/orders/{id},Elimina un pedido por su ID.,N/A
+| Método     | Endpoint       | Descripción               | Cuerpo de Solicitud   |
+| ---------- | -------------- | ------------------------- | --------------------- |
+| **POST**   | `/orders`      | Crea un nuevo pedido.     | JSON (ver ejemplo)    |
+| **GET**    | `/orders`      | Lista todos los pedidos.  | N/A                   |
+| **GET**    | `/orders/{id}` | Obtiene un pedido por ID. | N/A                   |
+| **PUT**    | `/orders/{id}` | Actualiza un pedido.      | Mismo cuerpo que POST |
+| **DELETE** | `/orders/{id}` | Elimina un pedido.        | N/A                   |
+
 
 Ejemplo de Cuerpo de Solicitud (POST/PUT /orders):
+{
+  "customerId": 1,
+  "orderItems": [
+    { "productId": 1, "quantity": 2 },
+    { "productId": 2, "quantity": 1 }
+  ]
+}
+
+
 
 4. Items de Pedido (/order-items)
 
-Método,Endpoint,Descripción,Cuerpo de Solicitud (Ejemplo)
-POST,/order-items,Crea un nuevo ítem de pedido.,Bloque de JSON (ver ejemplo abajo)
-DELETE,/order-items/{id},Elimina un item de pedido por su ID.,N/A
+| Método     | Endpoint            | Descripción             | Cuerpo de Solicitud |
+| ---------- | ------------------- | ----------------------- | ------------------- |
+| **POST**   | `/order-items`      | Crea un nuevo ítem.     | JSON (ver ejemplo)  |
+| **DELETE** | `/order-items/{id}` | Elimina un ítem por ID. | N/A                 |
+
 Ejemplo de Cuerpo de Solicitud (POST /order-items):
 {
   "orderId": 1,
@@ -109,27 +125,26 @@ Ejemplo de Cuerpo de Solicitud (POST /order-items):
   "quantity": 2
 }
 
+
 📂 Estructura del Proyecto
 El proyecto sigue una estructura modular típica de Spring Boot organizada por capas.
 src/
  ├── main/
  │    ├── java/
- │    │   ├── com/
- │    │   │   └── ferreteria_edu/
- │    │   │       └── ferreteria_api/
- │    │   │           ├── controller/
- │    │   │           ├── dto/
- │    │   │           ├── exception/
- │    │   │           ├── mapper/
- │    │   │           ├── model/
- │    │   │           ├── repository/
- │    │   │           └── service/
+ │    │   └── com/ferreteria_edu/ferreteria_api/
+ │    │       ├── controller/
+ │    │       ├── dto/
+ │    │       ├── exception/
+ │    │       ├── mapper/
+ │    │       ├── model/
+ │    │       ├── repository/
+ │    │       └── service/
  │    └── resources/
- │        └── application.properties
+ │         └── application.properties
 
 
 
-Descripción de las Carpetas Principales:
+# ✔ Descripción de las Carpetas Principales:
 
 controller/: Contiene los controladores REST que manejan las solicitudes HTTP.
 
