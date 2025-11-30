@@ -73,7 +73,7 @@ La API expone los siguientes endpoints para la gestión de recursos:
   "state": true
 }
 ```
-# ✔ Categorías (/category)
+## ✔ Categorías (/category)
 
 | Método     | Endpoint         | Descripción                      | Cuerpo de Solicitud   |
 | ---------- | ---------------- | -------------------------------- | --------------------- |
@@ -89,7 +89,7 @@ Ejemplo de Cuerpo de Solicitud (POST/PUT /category):
   "name": "Herramientas"
 }
 ```
-# ✔ Pedidos (/orders)
+## ✔ Pedidos (/orders)
 
 | Método     | Endpoint       | Descripción               | Cuerpo de Solicitud   |
 | ---------- | -------------- | ------------------------- | --------------------- |
@@ -101,32 +101,24 @@ Ejemplo de Cuerpo de Solicitud (POST/PUT /category):
 
 
 Ejemplo de Cuerpo de Solicitud (POST/PUT /orders):
+```json
 {
-  "customerId": 1,
-  "orderItems": [
-    { "productId": 1, "quantity": 2 },
-    { "productId": 2, "quantity": 1 }
+  "items": [
+    {
+      "productId": 4,
+      "quantity": 2,
+      "unitPrice": 3000
+    },
+    {
+      "productId": 6,
+      "quantity": 1,
+      "unitPrice": 4000
+    }
   ]
 }
+```
 
-
-
-4. Items de Pedido (/order-items)
-
-| Método     | Endpoint            | Descripción             | Cuerpo de Solicitud |
-| ---------- | ------------------- | ----------------------- | ------------------- |
-| **POST**   | `/order-items`      | Crea un nuevo ítem.     | JSON (ver ejemplo)  |
-| **DELETE** | `/order-items/{id}` | Elimina un ítem por ID. | N/A                 |
-
-Ejemplo de Cuerpo de Solicitud (POST /order-items):
-{
-  "orderId": 1,
-  "productId": 1,
-  "quantity": 2
-}
-
-
-📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 El proyecto sigue una estructura modular típica de Spring Boot organizada por capas.
 src/
  ├── main/
@@ -144,20 +136,20 @@ src/
 
 
 
-# ✔ Descripción de las Carpetas Principales:
+## ✔ Descripción de las Carpetas Principales:
 
-controller/: Contiene los controladores REST que manejan las solicitudes HTTP.
+- controller/: Contiene los controladores REST que manejan las solicitudes HTTP.
 
-dto/: Contiene los Objetos de Transferencia de Datos (DTO), utilizados para la entrada y salida de datos en la API.
+- dto/: Contiene los Objetos de Transferencia de Datos (DTO), utilizados para la entrada y salida de datos en la API.
 
-exception/: Contiene clases para manejar excepciones personalizadas.
+- exception/: Contiene clases para manejar excepciones personalizadas.
 
-mapper/: Contiene las clases de mapeo entre entidades y DTOs, utilizando ModelMapper.
+- mapper/: Contiene las clases de mapeo entre entidades y DTOs, utilizando ModelMapper.
 
-model/: Contiene las entidades del dominio (como Product, Category, Order, etc.).
+- model/: Contiene las entidades del dominio (como Product, Category, Order, etc.).
 
-repository/: Contiene los repositorios que interactúan con la base de datos, usando Spring Data JPA.
+- repository/: Contiene los repositorios que interactúan con la base de datos, usando Spring Data JPA.
 
-service/: Contiene la lógica de negocio y servicios relacionados con las entidades.
+- service/: Contiene la lógica de negocio y servicios relacionados con las entidades.
 
 
