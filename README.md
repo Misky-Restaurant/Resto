@@ -26,7 +26,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local.
 
 Abre tu terminal o línea de comandos y ejecuta:
 
-```bash
+bash
 git clone [https://github.com/tu_usuario/ferreteria-api.git](https://github.com/tu_usuario/ferreteria-api.git)
 
 cd ferreteria-api
