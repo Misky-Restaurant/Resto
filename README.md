@@ -127,6 +127,7 @@ src/
  │        └── application.properties
 
 
+
 Descripción de las Carpetas Principales:
 
 controller/: Contiene los controladores REST que manejan las solicitudes HTTP.
@@ -143,4 +144,9 @@ repository/: Contiene los repositorios que interactúan con la base de datos, us
 
 service/: Contiene la lógica de negocio y servicios relacionados con las entidades.
 
-
+Sección,Formato Markdown,Tienes que hacer clic...
+Comandos Bash,```bash,1 clic (en el botón de copia automática de GitHub)
+Propiedades de Spring,```properties,1 clic
+Cuerpo JSON de Producto,```json,1 clic
+Cuerpo JSON de Categoría,```json,1 clic
+Estructura del Proyecto,```,1 clic
